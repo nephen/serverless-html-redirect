@@ -2,7 +2,10 @@
 module.exports = async (req, res) => {
   const queryParams = req.query;
   const recommend = queryParams.recommend || '';
-  const redirectUrl = recommend ? `https://ggxh.nephen.cn/?recommend=${recommend}` : 'https://ggxh.nephen.cn/';
+  const token = queryParams.token || '';
+  const redirectUrl = recommend ? 
+    `https://ggxh.nephen.cn/?recommend=${recommend}${token ? `&token=${token}` : ''}` : 
+    `https://ggxh.nephen.cn/${token ? `?token=${token}` : ''}`;
 
   const htmlContent = `
     <!DOCTYPE html>
