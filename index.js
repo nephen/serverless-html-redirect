@@ -1,10 +1,10 @@
 module.exports.handler = async (event) => {
     // 获取 URL 查询参数
     const queryParams = event.queryStringParameters;
-    const a = queryParams ? queryParams.a : null;
+    const recommend = queryParams ? queryParams.recommend : null;
 
     // 构造目标跳转的 URL，传递相同的参数
-    const redirectUrl = a ? `https://ggxh.nephen.cn/?a=${a}` : 'https://ggxh.nephen.cn/';
+    const redirectUrl = recommend ? `https://ggxh.nephen.cn/?recommend=${recommend}` : 'https://ggxh.nephen.cn/';
 
     // HTML 页面内容
     const htmlContent = `
