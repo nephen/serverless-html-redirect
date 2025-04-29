@@ -23,6 +23,10 @@ module.exports = async (req, res) => {
           min-height: 100vh;
           margin: 0;
         }
+        h1 {
+          margin: 0 0 20px 0;
+          text-align: center;
+        }
       </style>
     </head>
     <body>
