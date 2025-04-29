@@ -14,6 +14,16 @@ module.exports = async (req, res) => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>页面跳转</title>
+      <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+        }
+      </style>
     </head>
     <body>
       <h1>点击下面的按钮跳转到新页面</h1>
